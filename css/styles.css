@@ -1,8 +1,8 @@
 /*------------------------------------------------------------------
                  [Master Stylesheet]
 
-Website      :	Galaxy - Modern and Responsive Portfolio Template
-Author       :  Aysel Omer
+Website      :	Personal Website
+Author       :  Phumuzile Moyo
 WebSite      :  https://thecodinggirls.com/galaxy
 Default Color:  #000;
 Text Color   :  #363636;
@@ -261,7 +261,7 @@ body {
 
 
 /*-------------------------------------------
-        Portfolio
+        Blog and Fun-Time
 -------------------------------------------*/
 
 
@@ -293,22 +293,67 @@ bottom:0;
 
 }
 
-.portfolio-image {
+.funtime-image {
     height:500px;
     overflow: hidden;
 }
 
-.portfolio-image img {
+.funtime-image img {
     display: block;
     transition : .8s;
     height:100%;
 }
 
-.gallery a:hover .portfolio-image img {
+.gallery a:hover .funtime-image img {
     transform: scale(1.06);
     filter:brightness(.6);
 }
 
+.blog:hover {
+    text-decoration: none;
+}
+
+.post_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.post_image {
+    height: 45%;
+}
+.post_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.post_content h5 {
+    font-size: 16px;
+    color: grey;
+    line-height: 19px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.post_content h4 {
+    font-size: 20px;
+    color: black;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.post_content p {
+    font-size: 15px;
+    color: black;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: .65;
+}
+
+.additional-info figure {
+    display: inline-block;
+    margin-right: 30px;
+    color: grey;
+}
 
 #btn-load-more {
     margin-top:50px;
@@ -321,6 +366,119 @@ bottom:0;
 
 
 
-/*
+/*-------------------------------------------
+        About Me
+-------------------------------------------*/
+#about-me p {
+    opacity: .6;
+}
 
+#btn-contact-me {
+    background-color: white;
+    border-color: white;
+    color: black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    margin: 20px 0px 10px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
+#about-me img {
+    width: 100%;
+}
+
+/*-------------------------------------------
+        My Team
+-------------------------------------------*/
+#team {
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.member {
+    text-align: center;
+}
+
+.member h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 10px;  
+}
+
+.member h5 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    opacity: .5;
+    margin-bottom: 20px;
+}
+
+.member_image_wrapper {
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.social_media {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    line-height: 380px;
+    transform: translateY(85%);
+    transition: .3s ease;
+    border-radius: 50%;
+
+}
+
+.member:hover .social_media {
+    transform: translateY(0%);
+
+}
+
+.social_media i {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    transition: .3s ease;
+}
+
+.social_media i:hover {
+    color: yellow;
+}
+
+/*-------------------------------------------
+        Contact
+-------------------------------------------*/
+
+#contact {
+    color: white;
+    background-color: black;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+#contact address {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------------------
+        Footer
+-------------------------------------------*/
+
+footer {
+    margin: 10px 0px;
+}

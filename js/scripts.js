@@ -43,5 +43,14 @@ $(document).ready(function() {
             }
         })
     })
+
+    // Magnific Popup Image Gallery
+    $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
     
 });
